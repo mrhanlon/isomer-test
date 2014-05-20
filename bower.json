@@ -2,7 +2,7 @@
   "name": "isomer-test",
   "version": "0.0.0",
   "dependencies": {
-    "twbs-bootstrap-sass": "~3.1.1+2",
+    "twbs-bootstrap-sass": "~3.1.1",
     "requirejs": "~2.1.4",
     "modernizr": "~2.6.2",
     "jquery": "~1.9.1",
