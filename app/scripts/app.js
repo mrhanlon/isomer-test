@@ -30,9 +30,7 @@ define(['jquery', 'isomer'], function ($, Isomer) {
     var Point = Isomer.Point;
 
     var background = Shape.Cylinder(new Point(0,0,4));
-    iso.add(background.scale(new Point(0,0,0), 2, 2, .5)
-        .rotateZ(new Point(0,0,0), angle)
-      , new Isomer.Color(192,192,192)
+    iso.add(background.scale(new Point(0,0,0), 2, 2, 0.5).rotateZ(new Point(0,0,0), angle), new Isomer.Color(192,192,192)
     );
 
     var prism = Shape.Prism(new Point(0,0,2));
