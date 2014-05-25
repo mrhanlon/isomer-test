@@ -34,14 +34,14 @@ define(['jquery', 'isomer'], function ($, Isomer) {
     );
 
     var prism = Shape.Prism(new Point(0,0,2));
-    iso.add(prism.rotateZ(new Point(0.5,0.5,0), angle), new Isomer.Color(241,74,74));
-    iso.add(prism.translate(0, 0, 1).rotateZ(new Point(0.5,0.5,0), 0.75*angle), new Isomer.Color(241,74,74));
-    iso.add(prism.translate(0, 0, 2).rotateZ(new Point(0.5,0.5,0), 0.50*angle), new Isomer.Color(241,74,74));
-    iso.add(prism.translate(0, 0, 3).rotateZ(new Point(0.5,0.5,0), 0.25*angle), new Isomer.Color(241,74,74));
-    angle += Math.PI / 270;
+    iso.add(prism.rotateZ(new Point(0.5,0.5,0), 0.5*angle), new Isomer.Color(241,74,74));
+    iso.add(prism.translate(0, 0, 1).rotateZ(new Point(0.5,0.5,0), 0.4*angle), new Isomer.Color(241,74,74));
+    iso.add(prism.translate(0, 0, 2).rotateZ(new Point(0.5,0.5,0), 0.3*angle), new Isomer.Color(241,74,74));
+    iso.add(prism.translate(0, 0, 3).rotateZ(new Point(0.5,0.5,0), 0.2*angle), new Isomer.Color(241,74,74));
+    angle += Math.PI / 12;
   }
 
-  function draw() {
+  function animate() {
     window.requestAnimationFrame(scene);
   }
 
@@ -49,7 +49,7 @@ define(['jquery', 'isomer'], function ($, Isomer) {
     init: function() {
       $(window).on('resize', resize);
       resize();
-      setInterval(draw);
+      setInterval(animate, 1000/30);
     }
   };
 });
