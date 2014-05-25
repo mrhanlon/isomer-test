@@ -1,4 +1,4 @@
-require.config({
+require.config {
   paths: {
     jquery: '../bower_components/jquery/jquery',
     isomer: '../bower_components/isomer/dist/isomer',
@@ -22,10 +22,7 @@ require.config({
       exports: 'Isomer'
     }
   }
-});
+}
 
-require(['app', 'jquery', 'bootstrap'], function (app) {
-  'use strict';
-  // use app here
-  app.init();
-});
+require ['app', 'jquery', 'bootstrap'], (app) ->
+  app.init()

@@ -1,5 +1,4 @@
-define([
-  'bootstrap-affix',
+define ['bootstrap-affix',
   'bootstrap-alert',
   'bootstrap-button',
   'bootstrap-carousel',
@@ -10,5 +9,4 @@ define([
   'bootstrap-scrollspy',
   'bootstrap-modal',
   'bootstrap-tooltip',
-  'bootstrap-popover'
-  ], function () {});
+  'bootstrap-popover']
