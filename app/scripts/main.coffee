@@ -16,8 +16,8 @@ require.config
     'bootstrap-tooltip': '../bower_components/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/tooltip',
     'bootstrap-popover': '../bower_components/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/popover'
   ,
-  shim: 
-    isomer: 
+  shim:
+    isomer:
       exports: 'Isomer'
 
 require ['app', 'jquery', 'bootstrap'], (app) ->

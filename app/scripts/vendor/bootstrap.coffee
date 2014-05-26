@@ -10,3 +10,5 @@ define ['bootstrap-affix',
   'bootstrap-modal',
   'bootstrap-tooltip',
   'bootstrap-popover']
+, ->
+  # no-op
