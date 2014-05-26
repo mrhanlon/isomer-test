@@ -1,5 +1,5 @@
-require.config {
-  paths: {
+require.config
+  paths:
     jquery: '../bower_components/jquery/jquery',
     isomer: '../bower_components/isomer/dist/isomer',
     bootstrap: 'vendor/bootstrap',
@@ -15,14 +15,10 @@ require.config {
     'bootstrap-modal': '../bower_components/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/modal',
     'bootstrap-tooltip': '../bower_components/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/tooltip',
     'bootstrap-popover': '../bower_components/twbs-bootstrap-sass/vendor/assets/javascripts/bootstrap/popover'
-  },
-
-  shim: {
-    isomer: {
+  ,
+  shim: 
+    isomer: 
       exports: 'Isomer'
-    }
-  }
-}
 
 require ['app', 'jquery', 'bootstrap'], (app) ->
   app.init()
